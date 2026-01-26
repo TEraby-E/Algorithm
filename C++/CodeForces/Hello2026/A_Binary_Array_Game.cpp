@@ -16,6 +16,16 @@ const int mod = 998244353;
 
 void solve()
 {
+    int n;
+    std::cin >> n;
+    std::vector<int> a(n+1);
+    for(int i = 1; i <= n; i ++){
+        std::cin >> a[i];
+    }
+    if(a[1]+a[n]==0){
+        std::cout << "Bob";
+    }
+    else    std::cout << "Alice";
 }
 
 signed main()
